@@ -1,5 +1,5 @@
-# Repaso de Python - CRUD de Serie y Artículos - Con Usuario personalizado e inicio de sesión con OAuth 
-# En DJango
+## Repaso de Python - CRUD de Serie y Artículos - Con Usuario personalizado e inicio de sesión con OAuth 
+### En DJango
 Este repo es un proyecto semilla en Django.
 
 Se usa el módulo de auth de django. 

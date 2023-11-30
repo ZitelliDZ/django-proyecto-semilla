@@ -2,13 +2,13 @@
 ### En DJango
 Este repo es un proyecto semilla en Django.
 
-Se usa el módulo de auth de django. 
-Se personaliza el modelo de Usuario. 
-Se modifica el back de autenticación.
-Se utiliza y modifica los formularios de Login y registro del módulo de auth.
-Se crea decorador 'user_not_authenticated'.
-Se usa el módulo para el envío de emails.
-se generan tokens para el restaflecimiento de contraseña.
+* Se usa el módulo de auth de django. 
+* Se personaliza el modelo de Usuario. 
+* Se modifica el back de autenticación.
+* Se utiliza y modifica los formularios de Login y registro del módulo de auth.
+* Se crea decorador 'user_not_authenticated'.
+* Se usa el módulo para el envío de emails.
+* Se generan tokens para el restaflecimiento de contraseña.
 
 
 

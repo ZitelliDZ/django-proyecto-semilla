@@ -30,14 +30,14 @@ se generan tokens para el restaflecimiento de contraseña.
 
 ...
 # Presentación
-![Pagina ViewDominio](https://github.com/ZitelliDZ/django-proyecto-semilla/sap/presentacion/dominio.png?raw=true)
+![Pagina ViewDominio](https://github.com/ZitelliDZ/django-proyecto-semilla/blob/main/sap/presentacion/dominio.png?raw=true)
 
-![Pagina ViewAplicacion](https://github.com/ZitelliDZ/django-proyecto-semilla/sap/presentacion/aplicacion.png?raw=true)
+![Pagina ViewAplicacion](https://github.com/ZitelliDZ/django-proyecto-semilla/blob/main/sap/presentacion/aplicacion.png?raw=true)
 
-![Pagina ViewHome](https://github.com/ZitelliDZ/django-proyecto-semilla/sap/presentacion/home.png?raw=true)
+![Pagina ViewHome](https://github.com/ZitelliDZ/django-proyecto-semilla/blob/main/sap/presentacion/home.png?raw=true)
 
-![Pagina ViewLogin](https://github.com/ZitelliDZ/django-proyecto-semilla/sap/presentacion/login.png?raw=true)
+![Pagina ViewLogin](https://github.com/ZitelliDZ/django-proyecto-semilla/blob/main/sap/presentacion/login.png?raw=true)
 
-![Pagina ViewArticuloDetalle](https://github.com/ZitelliDZ/django-proyecto-semilla/sap/presentacion/articulo_detalle.png?raw=true)
+![Pagina ViewArticuloDetalle](https://github.com/ZitelliDZ/django-proyecto-semilla/blob/main/sap/presentacion/articulo_detalle.png?raw=true)
 
-![Pagina ViewArticulo](https://github.com/ZitelliDZ/django-proyecto-semilla/sap/presentacion/articulo.png?raw=true)
+![Pagina ViewArticulo](https://github.com/ZitelliDZ/django-proyecto-semilla/blob/main/sap/presentacion/articulo.png?raw=true)

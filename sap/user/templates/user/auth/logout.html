@@ -1,0 +1,14 @@
+{% extends "webapp/main.html" %}
+
+{% block title %}
+<title>{{title}}</title>
+{% endblock title %}
+
+{% block content %}
+    <h2>Has cerrado sesión</h2>
+    <div class="border-top pt-3"  style="min-height:65vh;">
+        <small class="text-muted">
+            <a href="{% url 'login' %}">Volver a iniciar sesión</a>
+        </small>
+    </div>
+{% endblock content %}

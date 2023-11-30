@@ -1,0 +1,76 @@
+{% extends "webapp/main.html" %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+<title>{{title}}</title>
+{% endblock title %}
+
+{% block content %}
+<div class="content-section col-lg-12 col-md-12 col-sm-12 tutorial-style" style="min-height:65vh;">
+    <legend class="border-bottom mb-4">Información de perfil</legend>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="media">
+            
+            {% if form.instance.username == user.username %}
+                <input type="file" name="image" id="id_image" hidden onchange="previewImage(event)">
+                <label for="id_image">
+                    <img src="{{ form.instance.image.url }}" class="rounded-circle account-img profile-image " alt="Cargar nueva imagen" style="cursor: pointer;" id="preview">
+                </label>
+
+
+            {% else %}
+                <img src="{{ form.instance.image.url }}" class="rounded-circle account-img profile-image" alt="">
+            
+            {% endif %}
+            <div class="media-body">
+                <h2 class="account-heading">{{ form.instance.username }}
+                    <small class="text-muted">({{ form.instance.status }})</small>
+                </h2>
+                <p class="text-secondary">Nombre completo: {{ form.instance.first_name }} {{ form.instance.last_name }}</p>
+                <p class="text-secondary">Email: {{ form.instance.email }}</p>
+                <p class="text-secondary">Descripción: {{ form.instance.description }}</p>
+            </div>
+        </div>
+
+        {% if user.username == form.instance.username %}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Editar información de perfil</legend>
+                <div class="form-row  d-flex justify-content-between">
+                    <div class="form-group col-md-6 mb-0 pe-3">
+                        {{ form.first_name|as_crispy_field }}
+                    </div>
+                    <div class="form-group col-md-6 mb-0 ps-3">
+                        {{ form.last_name|as_crispy_field }}
+                    </div>
+                </div> 
+                {{ form.email|as_crispy_field }}
+                {{ form.description|as_crispy_field }}
+
+                <a href="{% url 'password_change' %}">¿Desea cambiar la contraseña?</a>
+            </fieldset>
+            <div class="form-group mt-3">
+                <button class="btn btn-outline-info" type="submit">Actualizar</button>
+            </div>
+        {% endif %}
+    </form>
+</div>
+
+<script>
+    function previewImage(event) {
+      const input = event.target;
+      const preview = document.getElementById('preview');
+  
+      const file = input.files[0];
+      const reader = new FileReader();
+  
+      reader.onload = function() {
+        preview.src = reader.result;
+      };
+  
+      if (file) {
+        reader.readAsDataURL(file);
+      }
+    }
+  </script>
+{% endblock content %}
